@@ -1,0 +1,143 @@
+body{
+  font-family: 'Roboto Mono', monospace;
+  background-color: #9d98a6;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+ul{
+  display: flex;
+  list-style-type: none;
+  height: 30px;
+  width: 600px;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+li{
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: #9c75ba;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger:focus{
+  outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: #5a0d94;
+    font-size: 30px;
+    margin: 20px;
+    align-self: flex-end;
+  }
+
+  ul {
+    display: none;
+    margin: 60px;
+    width: 70px;
+  }
+
+  ul.show {
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.subtext {
+  font-size: 15px;
+  font-weight: 300px;
+}
+
+.reading {
+  width: 1000px;
+  height: inherit;
+  box-shadow: 5px 5px 20px #b2b1b5;
+  margin: 10px;
+  background-color: #9672d4;
+}
+
+.reading-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+  .reading-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.card-image {
+  height: 300px;
+  margin-top: 10px;
+  border-top: 125px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.button{
+  width: 200px;
+  height: 50px;
+  border-radius: 40px;
+  color: #0f0230;
+  background-color: #5a9b9e;
+  border-color: #5a9b9e;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.button:hover {
+  background-color: #14969c;
+  border-color: #235457;
+}
+
+.button:active {
+  background-color: #58797a;
+  border-color: #58797a;
+}
+
+a {
+  text-decoration: none;
+  color: #5a0d94;
+}

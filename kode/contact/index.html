@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aafade8f34.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+  </head>
+
+  <body>
+    <section class="hero">
+      <nav>
+        <ul id="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/index.html">About me</a></li>
+          <li><a href="../projects/index.html">Projects</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+
+      <h2>Contact Me</h2>
+      <form id="emailForm" action="https://formsubmit.co/madeupaddressforgithub@lmao.com" method="POST">
+        <input type="hidden" name="_subject" value="New contact form submission!">
+        <input type="email" name="email" placeholder="Email Address" required id="address">
+        <input type="hidden" name="_next" value="https://gulfemaytekin.com/alternative/thanks.html">
+        <input type="text" name="Message" placeholder="Type your message here" required id="message">
+        <button id="emailButton" type="submit">Send</button>
+        <p>Or feel free to reach out to me on <a href="https://www.linkedin.com/in/gulfem-aytekin/" target="_blank" id="linkedIn">LinkedIn</a></p>
+      </form>
+
+    </section>
+  </body>
+  <script src="../src/app.js"></script>
+</html>
